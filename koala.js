@@ -9,16 +9,20 @@
 }(typeof self !== "undefined" ? self : this, function () {
 	const K = {};
 
-	K.log = (message) => {
-		console.log(message);
-	};
-
 	K.show = (element) => {
 		element.style.visibility = "visible";
 	};
 
 	K.hide = (element) => {
 		element.style.visibility = "hidden";
+	};
+
+	K.setClass = (element, className) => {
+		element.className = className;
+	};
+
+	K.replaceClass = (element, newClassName, oldClassName) => {
+		element.classList.replace(oldClassName, newClassName);
 	};
 
 
