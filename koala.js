@@ -13,6 +13,15 @@
 		console.log(message);
 	};
 
+	K.show = (element) => {
+		element.style.visibility = "visible";
+	};
+
+	K.hide = (element) => {
+		element.style.visibility = "hidden";
+	};
+
+
 	return K;
 
 }));
